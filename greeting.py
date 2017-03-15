@@ -4,12 +4,32 @@
 # Function declarations
 
 def greeting(greeting, name):
+    """ Returns a greeting to a person.
+        
+    Args:
+        greeting (str): A greeting.
+        name (str): A person's name.
+        
+    Returns (str):
+        A greeting to a person.
+    """
+    
     # NOTES:
     # 1. String technique #3: %-interpolation
     # 2. Built-in function 'title()' capitalizes only the first letter of a string.
     return "%s, %s!" % (greeting.title(), name)
 
 def greeting_for_hour(name, hour=None):
+    """ Returns a time-dependent greeting to a person.
+        
+    Args:
+        name (str): A person's name.
+        hour (int): A hour of the day.
+    
+    Returns (str):
+        A greeting to a person.
+    """
+    
     greeting_str = 'hello'
 
     if hour != None:
@@ -26,3 +46,7 @@ def greeting_for_hour(name, hour=None):
             greeting_str = 'good night'
 
     return greeting(greeting_str, name)
+
+# NOTE: For unit testing purposes, execute as self-test only if being run as a top-level script.
+if __name__ == "__main__":
+    pass
