@@ -11,6 +11,18 @@ from name import Name
 # Function declarations
 
 def demo(name, sex_list=['M'], is_married_list=[True], hour_list=None):
+    """ Prints a set of demographically-driven greetings to a particular person.
+        
+    Args:
+        name (Name): An instance of a 'Name'.
+        sex_list ([str]): A list of of sex types.
+        is_married_list ([bool]): A list of marrital status types.
+        hour_list ([bool]): A list of hours of the day.
+        
+    Returns:
+        N/A.
+    """
+    
     for sex in sex_list:
         for is_married in is_married_list:
             for hour in hour_list:
