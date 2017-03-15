@@ -12,19 +12,45 @@
 """
 
 def unique(a):
-    """ return the list with duplicate elements removed """
+    """ Return the list with duplicate elements removed.
+        
+    Args:
+        a (list): A list.
+        
+    Returns (list):
+        The list with duplicate elements removed.
+    """
+    
     # NOTES:
     # 1. Built-in function 'set()' can convert a list (ordered) into a set (unordered).
     # 2. Built-in function 'list()' can convert a set (unordered) into a list (ordered).
     return list(set(a))
 
 def intersect(a, b):
-    """ return the intersection of two lists """
+    """ Return the intersection of two lists.
+        
+    Args:
+        a (list): A list.
+        b (list): Another list.
+        
+    Returns (list):
+        The intersection of the two lists.
+    """
+    
     # NOTE: Binary operator '&' is built in and returns the intersection of 2 sets.
     return list(set(a) & set(b))
 
 def union(a, b):
-    """ return the union of two lists """
+    """ Return the union of two lists.
+        
+    Args:
+        a (list): A list.
+        b (list): Another list.
+        
+    Returns (list):
+        The union of the two lists.
+    """
+    
     # NOTE: Binary operator '|' is built in and returns the union of 2 sets.
     return list(set(a) | set(b))
 
